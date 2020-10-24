@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import WebScraper from './components/WebScraper'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <WebScraper />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
