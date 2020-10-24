@@ -33,10 +33,11 @@ function WebScrape() {
                     }
                     if (html.includes("cashmere")) {
                         console.log("cashmere");
-                        m.push("cashmere");
+                        //m.push("cashmere");
                     }
                     setMaterials(m);
                 })
+                .catch(error => console.log("This page has no materials"))
             }
       });
     })
@@ -52,7 +53,7 @@ function WebScrape() {
                         return <li>{m}</li>
                     })}
                 </ul>
-                <Button>{toggle ? "turn off": "turn on"}</Button>
+                <Button onclick={console.log(toggle)}>{toggle ? "turn off": "turn on"}</Button>
                 {/*<Button onClick={setToggle(!toggle)} >{toggle? "turn off": "turn on"}</Button>*/}
             </Card>
             
