@@ -1,0 +1,10 @@
+.navbar > img {
+    margin-left: 0px;
+    margin-right: auto;
+    width: 10%;
+    height: 10%;
+}
+
+.navbar {
+    margin-right: 2px;
+}
