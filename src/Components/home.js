@@ -22,7 +22,7 @@ function Home() {
                 <h2>Todays featured brand is</h2>
                 <a class="store-link" href="https://kotn.com/" target="_blank"><img src={require("./kotn.png")}></img></a>
                 <div class="redirect">
-                    <Button color="white"><Link class="unravel-link" to="/Scrape">UnRavel</Link></Button>
+                    <Button color="white"><Link class="unravel-link" to="/Scrape">Unravel</Link></Button>
                 </div>
             </div>
         </div>

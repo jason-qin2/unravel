@@ -10,9 +10,9 @@
     "default_title": "Open the popup"
   },
   "icons": {
-    "16": "yarn.png",
-    "48": "yarn.png",
-    "128": "yarn.png"
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
   },
   "content_security_policy": "script-src 'self' 'sha256-QxcYc9VybqaH/gIW+3x9KOxJsxowASGzVcaOipMjbGk='; object-src 'self'",
   "permissions": [
