@@ -5,3 +5,52 @@ h1,h2,h3 {
 ul,li {
     text-align: center;
 }
+
+.top > p{
+    text-align: center;
+}
+
+.top > img{
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.carousel {
+    margin-top: -0px;
+    margin-bottom: 50px;
+}
+
+.carousel > Carousel {
+    text-align: center;
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption {
+    text-align: left;
+}
+
+.material-card > img{
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.store-link{
+    text-align: center;
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

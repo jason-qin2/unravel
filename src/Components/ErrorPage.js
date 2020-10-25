@@ -10,11 +10,16 @@ function ErrorPage() {
     const [toggle, setToggle] = useState(true);
 
     return (
-        <div>
-            <h1>Oh No!</h1>
-            <h2>No materials or brands found</h2>
-            <h4>Try again on a store's page</h4>
+        <div class="top" >
+            {/*<img src={require("./logo.JPG")}></img>*/}
+            <div class="error-card">
+                <h1>Oh No!</h1>
+                <img src={require("./ball.JPG")}></img>
+                <h2>No materials or brands found</h2>
+                <h4>Try again on a store's page</h4>
+            </div>
         </div>
+        
     );
   }
   

@@ -1,0 +1,62 @@
+body {
+    font-family: Tahoma;
+}
+
+h1,h2,h3,h4 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+.top > img{
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.home-card {
+    margin-top: -0px;
+    margin-bottom: 50px;
+}
+
+.home-card > img{
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.store-link > img{
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unravel-Link {
+    font-size: medium;
+    color: black;
+    text-align: center;
+  }
+
+.redirect {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redirect > Link{
+    font-size: medium;
+    color: black;
+    text-align: center;
+}

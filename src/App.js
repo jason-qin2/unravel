@@ -4,16 +4,12 @@ import './App.css';
 import WebScrape from './Components/WebScrape';
 import ErrorPage from './Components/ErrorPage.js';
 import MaterialPage from './Components/MaterialPage.js';
-import * as components from './Components';
+import Fact from './Components/Fact.js';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <main>
-      <Switch>
-        <Route path="/" component={WebScrape} />
-        <Route path="/material" component={MaterialPage} />
-      </Switch>
-    </main>
+    <div></div>
   );
 }
 
