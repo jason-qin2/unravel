@@ -18,6 +18,8 @@ function WebScrape() {
     const [cotton, setCotton] = useState(false);
     const [polyester, setPolyester] = useState(false);
     const [wool, setWool] = useState(false);
+    const [encircled, setEncircled] = useState(false);
+    const [kotn, setKotn] = useState(false);
   
     useEffect (() => {
       // use the request-promise library to fetch the HTML from
@@ -30,6 +32,14 @@ function WebScrape() {
                 .then(html => {
                     var m = [];
                     //console.log(html);
+                    if (html.includes("encircled.ca")) {
+                        console.log("encircled");
+                        setEncircled(true);
+                    }
+                    if (html.includes("kotn.com")) {
+                        console.log("kotn");
+                        setKotn(true);
+                    }
                     if (html.includes("cotton")) {
                         console.log("cotton");
                         m.push("cotton");
@@ -116,7 +126,47 @@ function WebScrape() {
       </Card>
     );
 
-    if (materials.length == 0) {
+    if (encircled == true) {
+        return (
+            <div class="top" >
+            <div class="home-card">
+                <a class="store-link" href="https://www.encircled.ca/" target="_blank"><img src={require("./encircled.png")}></img></a>
+                <h2>You are currently shopping with one of our featured stores!</h2>
+                <p>Encircled creates products 100% made in Canada and emphasizes versatility and comfort</p>
+                <Table styles={{alignitems: 'center', justifycontent: 'center'}}>
+                <tbody>
+                    <Col>
+                        <tr><th scope='row'>Price Range:</th><td>$$</td></tr>
+                        <tr><th scope='row'>Featured Products:</th><td>Workwear that feels like PJs</td></tr>
+                    </Col>
+                </tbody>
+            </Table>
+                
+            </div>
+        </div>
+        );
+    } 
+    else if (kotn == true) {
+        return (
+            <div class="top" >
+            <div class="home-card">
+                <a class="store-link" href="https://www.kotn.com/" target="_blank"><img src={require("./kotn.png")}></img></a>
+                <h2>You are currently shopping with one of our featured stores!</h2>
+                <p>Kotn is a Canada-based brand that aims to set the standard for conscious creation and consumption</p>
+                <Table styles={{alignitems: 'center', justifycontent: 'center'}}>
+                <tbody>
+                    <Col>
+                        <tr><th scope='row'>Price Range:</th><td>$$</td></tr>
+                        <tr><th scope='row'>Featured Products:</th><td>Unisex Knitwear using quality cotton</td></tr>
+                    </Col>
+                </tbody>
+            </Table>
+                
+            </div>
+        </div>
+        );
+    }
+    else if (materials.length == 0) {
         return (
             <ErrorPage />
         );

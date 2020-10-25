@@ -54,3 +54,7 @@ ul,li {
     margin-left: auto;
     margin-right: auto;
 }
+
+.home-card > p {
+    text-align: center;
+}
