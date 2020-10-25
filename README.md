@@ -26,7 +26,7 @@ npm run build
 
 In your Google Chrome browser, go to chrome://extensions/
 Turn on developer mode and click "Load Unpacked"
-Select the build folder in unravel
+Select the build folder in the unravel folder
 
 You are now able to utilize unravel!
 
