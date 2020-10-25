@@ -2,7 +2,7 @@
 
 A Google Chrome extension that informs users of the environmental impacts of the clothes they are shopping for. 
 
-## Documentation
+## How to use
 
 Download or clone the repository to your computer
 In your command prompt/terminal cd into the unravel directory
